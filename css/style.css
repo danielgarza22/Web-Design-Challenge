@@ -1,0 +1,45 @@
+
+.green{color: #2AAA8A;}
+.darkgray{color: rgb(121, 121, 121);}
+.lightgray{color: rgb(241, 241, 241);}
+.textsize16{font-size: 16px;}
+.whitebackground{background-color: white;}
+.greenbackground{background-color: #2AAA8A;}
+.thick {font-weight: bold;}
+
+/* Columns */
+    .left {width: 73%;}
+    .center{width: 2%;}
+    .right {width: 25%;}
+
+.padding {padding:25px;}
+.indent{margin-left: 30px;}
+
+/* Right-aligned section inside the top navigation */
+    .topnav-right {float: right;}
+
+.latitude {
+    color: white;
+    background-color: #2AAA8A;
+    font-weight: bold;
+}
+
+.navbar {font-family: Arial;}
+
+
+
+
+/* Others I havent use */
+
+.column {float: left;}
+
+.bluebackground{background-color: lightblue;}
+
+.alignleft{text-align: left;}
+
+.aligncenter{text-align: center;}
+
+.alignright{text-align: right;}
+
+
+

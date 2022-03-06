@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web Design Homework - Humidity</title>
+        <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+        <!-- Bootstrap Link -->
+        <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+
+    </head>
+
+    <!-- Navigation List -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div>
+            <a class="navbar-brand latitude" href="index.html">Latitude <span class="sr-only">(current)</span></a>
+        </div>
+        <div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">Plots</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
+                        <a class="dropdown-item" href="humidity.html">Humidity</a>
+                        <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                        <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="comparisons.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="data.html">Data</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <body style="background-color: lightgray;">
+        <br><br>
+        <div class="container" >
+            <div class="row">
+                <div class="column left whitebackground">
+                    <div>
+                        <br>
+                        <h1 class="green thick indent" style="font-family:Bookman Old Style">Humidity</h1>
+                        <hr>
+                    </div>
+                
+                    <div class="row">
+                            <div>
+                                <p style="margin-left: 40px" class="textsize16 darkgray thick padding">
+                                    <img src="Resources/assets/images/Fig2.png " style="width:750px;height:550px;" alt="Fig2"><br> As expected, ...
+                                </p>
+                            </div>
+                    </div>
+                </div>
+                <div class="column center">
+                </div>
+                
+                <!-- Preview Images Sidebar -->        
+                <div class="column right whitebackground">
+                    <center><br>
+                    <h3 class="green" style="font-family:Bookman Old Style">Visualizations</h3><hr>
+                    <img src="Resources/assets/images/Fig1.png" width=200px; height=150px; alt="Figure 1"><br><br>
+                    <img src="Resources/assets/images/Fig2.png" width=200px; height=150px; style="border: 1px solid #2AAA8A;" alt="Figure 2"><br><br>
+                    <img src="Resources/assets/images/Fig3.png" width=200px; height=150px; alt="Figure 3"><br><br>
+                    <img src="Resources/assets/images/Fig4.png" width=200px; height=150px; alt="Figure 4"><br><br>
+                    </center>
+                </div>
+
+            </div>
+        </div>
+        <br><br>
+        <!-- Footer -->
+        <footer>
+            <p>&copy; Daniel Garza 2022, Georgia Tech Bootcamp!</p>
+        </footer>
+
+        <!-- Bootstrap Script -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    </body>
+</html>
