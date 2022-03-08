@@ -14,91 +14,97 @@
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
-
     </head>
 
-    <!-- Navigation List -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div>
-            <a class="navbar-brand latitude" href="index.html">Latitude <span class="sr-only">(current)</span></a>
-        </div>
-        <div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">Plots</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
-                        <a class="dropdown-item" href="humidity.html">Humidity</a>
-                        <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-                        <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="comparisons.html">Comparison</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="data.html">Data</a>
-                </li>
-            </ul>
-            </div>
-        </div>
-    </nav>
-
-    <body style="background-color: lightgray;">
-        <br><br>
-        <div class="container" >
-            <div class="row">
-                <div class="column left whitebackground">
-                    <div>
-                        <br>
-                        <h1 class="green thick indent" style="font-family:Bookman Old Style">Summary: Latitude vs. X</h1>
-                        <hr>
-                    </div>
-                
-                    <div class="row">
-                            <div>
-                                <p style="margin-left: 40px" class="textsize16 darkgray thick padding">
-                                    <img src="Resources/assets/images/Fig1.png " style="width:250px;height:250px;" alt="City Latitude vs. Max Temperature" ALIGN="left"> The Purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish
-                                    this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities. <br> <br>
-                                    We randomly select latitude and longitude coorsinates to have 500 cities around the workd for my dataset. The cities that we randomly got, are cities from different countries and areas. <br><br>
-                                    After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualization created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
-                                </p>
+    <body>
+        <!-- Navigation Bar -->
+        <div class="navigation_bar">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+                <a class="navbar-brand" href="index.html">Latitude</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <!-- Navbar Menu -->
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">Plots</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
+                                <a class="dropdown-item" href="humidity.html">Humidity</a>
+                                <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                                <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
                             </div>
-                    </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="comparisons.html">Comparison</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="data.html">Data</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="column center">
-                </div>
-                
-                <!-- Preview Images Sidebar -->        
-                <div class="column right whitebackground">
-                    <center><br>
-                    <h3 class="green" style="font-family:Bookman Old Style">Visualizations</h3><hr>
-                    <a href="max_temp.html">
-                        <img src="Resources/assets/images/Fig1.png" style="width:200px;height:150px;" alt="Figure 1"><br><br>
-                    </a>
-                    <a href="humidity.html">
-                        <img src="Resources/assets/images/Fig2.png" style="width:200px;height:150px;" alt="Figure 2"><br><br>
-                    </a>
-                    <a href="cloudiness.html">
-                        <img src="Resources/assets/images/Fig3.png" style="width:200px;height:150px;" alt="Figure 3"><br><br>
-                    </a>
-                    <a href="windspeed.html">
-                        <img src="Resources/assets/images/Fig4.png" style="width:200px;height:150px;" alt="Figure 4"><br><br>
-                    </a>
-                    <br>
-                    </center>
-                </div>
-
-            </div>
+            </nav>
         </div>
-        <br><br>
+        <!-- End of Navigation Bar -->        
+<br>
+<br>
+        <!-- Body of page -->
+        <div class="container" >
+            <section class="row">
+                <div class="col-lg-7 col-md-12">
+                    <div>
+                        <h1 class="header">Summary: Latitude vs. X</h1>
+                        <hr>
+                        <img src="Resources/assets/images/Fig1.png " alt="City Latitude vs. Max Temperature" class="desc-image">
+                        <p>The Purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+                        <p>We randomly select latitude and longitude coorsinates to have 500 cities around the workd for my dataset. The cities that we randomly got, are cities from different countries and areas.</p>
+                        <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualization created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+                        </div>
+                </div>
+                <div class="col-lg-5 col-md-8">
+                
+                <!-- Visualization Bar -->
+                <section>
+                    <div class="visual_bar">
+                        <h2 class="visual_bar_header">Visualizations</h2>
+                        <hr>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-6">
+                                    <a href="max_temp.html">
+                                        <img src="Resources/assets/images/Fig1.png" alt="Figure 1">
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="humidity.html">
+                                        <img src="Resources/assets/images/Fig2.png" alt="Figure 2">
+                                    </a>
+                                </div>                              
+                                <div class="col-6">
+                                    <a href="cloudiness.html">
+                                        <img src="Resources/assets/images/Fig3.png" alt="Figure 3">
+                                    </a>
+                                </div>                              
+                                <div class="col-6">
+                                    <a href="windspeed.html">
+                                        <img src="Resources/assets/images/Fig4.png" alt="Figure 4">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- End of visualization bar -->
+                
+                </div>
+            </section>
+        </div>
+        
         <!-- Footer -->
         <footer>
-            <p>&copy; Daniel Garza 2022, Georgia Tech Bootcamp!</p>
+            <p>&copy; Daniel Garza 2022, Bootcamp!</p>
         </footer>
 
         <!-- Bootstrap Script -->
