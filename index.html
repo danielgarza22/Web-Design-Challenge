@@ -6,14 +6,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Web Design Project - Web Visualization Dashboard (Latitude)</title>
         <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-        <link rel="icon" type="image/png" href="images/favicon.png">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-
+        
         <!-- Bootstrap Link -->
         <link rel="stylesheet"
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
+        
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        
+
     </head>
 
     <body>
@@ -53,21 +55,19 @@
         <!-- Body of page -->
         <div class="container" >
             <section class="row">
-                <div class="col-lg-7 col-md-12">
+                <div class="col-lg-7 col-md-12 desc-content">
                     <div>
                         <h1 class="header">Summary: Latitude vs. X</h1>
                         <hr>
                         <img src="Resources/assets/images/Fig1.png " alt="City Latitude vs. Max Temperature" class="desc-image">
-                        <p>The Purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
-                        <p>We randomly select latitude and longitude coorsinates to have 500 cities around the workd for my dataset. The cities that we randomly got, are cities from different countries and areas.</p>
-                        <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualization created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
-                        </div>
+                        <p>The Purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities. <br><br> We randomly select latitude and longitude coorsinates to have 500 cities around the workd for my dataset. The cities that we randomly got, are cities from different countries and areas. <br><br> After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualization created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+                    </div>
                 </div>
                 <div class="col-lg-5 col-md-8">
                 
                 <!-- Visualization Bar -->
                 <section>
-                    <div class="visual_bar">
+                    <div class="visual_bar desc-content">
                         <h2 class="visual_bar_header">Visualizations</h2>
                         <hr>
                         <div class="container">
