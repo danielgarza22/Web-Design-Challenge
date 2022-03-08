@@ -4,7 +4,6 @@
 
 .lightgray{color: rgb(241, 241, 241);}
 
-
 body {
     background-color: rgb(241, 241, 241);
     color: #839496;
@@ -76,7 +75,10 @@ img{
     height: 100%;
 }
 
-/* .p style="margin-left: 40px" class="textsize16 darkgray thick padding */
+.frame {
+    border: solid #2AAA8A;
+    border-width: 1px;
+}
 
 @media screen and (max-width: 968px){
     .navbar-nav {
